@@ -3,15 +3,15 @@
 	"id": "bloom",
 	"version": "${version}",
 	"name": "Bloom",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Bloom is a Fabric mod for Minecraft 1.21.1 that introduces new ores, items, tools, armor, and exploration features like structure generation. For the best experience, pair it with Tectonic and Blooming Biosphere.",
 	"authors": [
-		"Me!"
+		"EternalHell"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://eterneon.net/",
+		"sources": "https://github.com/Eterneon/fabric-bloom"
 	},
-	"license": "CC0-1.0",
+	"license": "GPL-3.0",
 	"icon": "assets/bloom/icon.png",
 	"environment": "*",
 	"entrypoints": {
@@ -20,7 +20,10 @@
 		],
 		"fabric-datagen": [
 			"net.eterneon.bloom.BloomDataGenerator"
-		]
+		],
+      "client": [
+        "net.eterneon.bloom.BloomClient"
+      ]
 	},
 	"mixins": [
 		"bloom.mixins.json"
